@@ -14,6 +14,9 @@ To enhance performance and optimize resource usage, the system utilizes Redis as
 3. **Data Aggregation**: Before transferring data from Redis to MongoDB for permanent storage, an aggregation pipeline is utilized to summarize and efficiently organize the data, reducing redundancy and improving query performance.
 
 4. **Rate-Limit**:Rate Limit is added on both mongodb and express(if using one ip to send request not use mongodbrate limit)
+
+5. **Clustering**: Using pm2 for Clustering
+   
 ## Technologies Used
 
 - **Node.js**: JavaScript runtime for building scalable server-side applications.
